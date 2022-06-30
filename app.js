@@ -26,7 +26,7 @@ app.get('/:number', (req, res) => {
 })
 
 app.get('/', (req, res) => {
-    res.send('Api funcionando prueba xd')
+    res.send('Api funcionando cambio realizado en new rama xd')
 })
 
 
