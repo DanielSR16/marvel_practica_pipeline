@@ -7,6 +7,10 @@ phases:
       nodejs: 10
   pre_build:
     commands:
+      - echo Logging in to Docker Hub...
+      - DOCKER_USERNAME=danielrobless
+      - DOCKER_PASSWORD=dasaro1604
+      - docker login -u="${DOCKER_USERNAME}" -p="${DOCKER_PASSWORD}"
       - npm install
       - echo Logging in to Amazon ECR...
       - aws --version
