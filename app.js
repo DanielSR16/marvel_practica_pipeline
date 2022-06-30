@@ -26,7 +26,7 @@ app.get('/:number', (req, res) => {
 })
 
 app.get('/', (req, res) => {
-    res.send('Api funcionando')
+    res.send('Api funcionando prueba xd')
 })
 
 
